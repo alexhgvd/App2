@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Alex's Sample App2 | <%= @title %></title></head>
+<title><%= @title %></title><%=csrf_meta_tag%>
+<%=stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+<%=stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+
+
+</head>
 <body>
+<%=yield%>
 <h1>Sample App2</h1>
 <p>This is the Sample page for me to learn Ruby on Rails - Let's see how well I did!</p>
+<p>So far, I created a Home page and Contacts page
 
 </body>
 </html>
